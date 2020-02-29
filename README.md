@@ -15,3 +15,4 @@ Cara Menjalan File :
 Jika ingin memastikan lagi apakah sudah benar atau belum silahkan reload browser nya.
 
 --------------------------------------------------------------------------------------------------------------
+![Annotation 2020-02-29 230015](https://user-images.githubusercontent.com/40693134/75609881-482dfb00-5b47-11ea-9b60-0f93e70ddbc4.jpg)
