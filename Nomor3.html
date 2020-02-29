@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 3</title>
+</head>
+
+<body>
+    <!-- <script src="Nomor 3.js"></script> -->
+    <script>
+        function DeretBilangan(nilai) {
+            deretBilangan.push(nilai);
+            for (var i = 0; i < deretBilangan.length; i++) {
+                if (deretBilangan[i] == 2) {
+                    deretBilangan.push(1);
+                    break;
+                } else if (deretBilangan[i] % 2 == 0) {
+                    var genap = deretBilangan[i] / 2;
+                    deretBilangan.push(genap);
+                } else {
+                    var ganjil = 3 * deretBilangan[i] + 1;
+                    deretBilangan.push(ganjil);
+                }
+
+            }
+            console.log(deretBilangan);
+            console.log("array : [" + deretBilangan + "]");
+            console.log("Count : " + deretBilangan.length);
+        }
+
+        var deretBilangan = [];
+        var a = prompt('Masukkan Nilai');
+        var Nilai = parseInt(a);
+        if (Nilai < 0) {
+            alert('Parameter harus bilangan positif!');
+        }
+        var x = DeretBilangan(Nilai);
+    </script>
+</body>
+
+</html>

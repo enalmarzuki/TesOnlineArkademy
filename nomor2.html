@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 2</title>
+    <script>
+        function Alphabet(nilai, pesan) {
+            //var alphaExp = /^[0-9a-z0-9]+$/;
+            var alphaExp = /^(.)[a-z]{3}.*\1$/;
+            if (nilai.value.match(alphaExp)) {
+                return true;
+            } else {
+                alert(pesan);
+                nilai.focus();
+                return false;
+            }
+        }
+
+        function Password(nilai, pesan) {
+            //var alphaExp = /^[0-9a-z0-9]+$/;
+            //var alphaExp = /^[0-9-0-9a-z0-9]+$/;
+            var alphaExp = /(?=.*\d)(?=.*[a-z])(?=.*[a-z]).{7,11}/;
+            if (nilai.value.match(alphaExp)) {
+                return true;
+            } else {
+                alert(pesan);
+                nilai.focus();
+                return false;
+            }
+        }
+
+
+        function validasi() {
+            Alphabet(document.getElementById('username'), 'Username harus Huruf Kecil semua');
+            Password(document.getElementById('password'), 'Password Salah');
+            // cekEmail(document.getElementById('email'), 'Email tidak benar!!');
+        }
+    </script>
+</head>
+
+<body>
+    <p>Username : <input type="text" name="username" id="username"></p>
+    <p>Password : <input type="text" name="password" id="password"></p>
+    <p> <input type="submit" onclick="validasi()" value="submit"> </p>
+
+</body>
+
+</html>

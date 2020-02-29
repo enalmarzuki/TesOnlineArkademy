@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 4</title>
+</head>
+
+<body>
+    <!-- <script src="Nomor 4.js"></script> -->
+    <script>
+        var deretBilangPrima = [];
+
+        function cekPrima(n) {
+            var max = Math.sqrt(n);
+            for (var i = 2; i <= max; i++) {
+                if (n % i == 0)
+                    return false;
+            }
+            return true;
+        }
+
+        for (var n = 2; n < 30; n++) {
+            if (cekPrima(n)) {
+                deretBilangPrima.push(n);
+                //console.log(n + ' ');
+                //console.log(Math.floor(Math.random() * 30) + 1);
+            }
+        }
+
+        var isiAngkaYangSama = [];
+
+        function nilaiPrimaAcak(j) {
+            for (var h = 0; h < j; h++) {
+                var angkaRandom = Math.floor(Math.random() * 30) + 1;
+                var angka = deretBilangPrima.filter(function (x) {
+                    if (x == angkaRandom) {
+                        isiAngkaYangSama.push(angkaRandom);
+                        return x == angkaRandom;
+                    } else {
+                        //h--;
+                        return 0;
+                    }
+                })
+                //console.log(angka);
+                h--;
+                if (isiAngkaYangSama.length == j) {
+                    break;
+                }
+            }
+            console.log("Array : [" + isiAngkaYangSama + "]");
+            console.log(isiAngkaYangSama);
+            let sum = isiAngkaYangSama.reduce((x, y) => x + y);
+            console.log("Sum : " + sum);
+        }
+        var g = parseInt(prompt('Masukkan Parameter Randomize'));
+        if (g > 9) {
+            alert('Parameter Randomize Harus dibawah 10');
+        } else {
+            var nilaiAcak = nilaiPrimaAcak(g);
+        }
+    </script>
+</body>
+
+</html>

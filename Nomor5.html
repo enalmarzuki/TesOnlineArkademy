@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 5</title>
+</head>
+
+<body>
+    <!-- <script src="Nomor 5.js"></script> -->
+    <script>
+        function Segitiga(n) {
+            var s = '';
+            for (var i = 1; i <= n; i++) {
+                for (var u = i; u <= n; u++) {
+                    s += ' ';
+                }
+                for (var e = 1; e <= i; e++) {
+                    s += '*';
+                }
+                s += ' \n'
+            }
+            console.log(s);
+        }
+        var nilai = prompt('Masukkan Jumlah Baris');
+        var baris = parseInt(nilai);
+        var bintang = Segitiga(baris);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+kegunaan JSON pada REST API itu sebagai format untuk bertukar data antara client dan server atau antar aplikasi.

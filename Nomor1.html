@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomor 1</title>
+</head>
+
+<body>
+    <!-- <script src="Nomor 1.js"></script> -->
+    <script>
+        function myBiodata(name, age) {
+            var biodataSaya = {
+                name: name,
+                age: age,
+                address: "jl. marsuki dg nompo no. 4",
+                hobbies: "badminton",
+                is_merried: false,
+                list_school: [{
+                        kampus: "UIN alauddin Makassar",
+                        year_in: "2015",
+                        year_out: "2019",
+                        major: "teknik informatika"
+                    },
+                    {
+                        sma: "sma negeri 19 makassar",
+                        year_in: "2011",
+                        year_out: "2014",
+                        marjor: "ipa"
+                    }
+                ],
+                skills: [{
+                        design: "coreldraw",
+                        level: "advanced"
+                    },
+                    {
+                        program: "html & css",
+                        level: "beginner"
+                    }
+                ],
+                interest_in_coding: true
+            };
+            biodataSaya.name = name;
+            biodataSaya.age = age;
+            //return console.log(mybiodata);
+            return biodataSaya;
+        }
+        var biodata = myBiodata("marzuki", 23);
+        console.log(biodata);
+    </script>
+</body>
+
+</html>
