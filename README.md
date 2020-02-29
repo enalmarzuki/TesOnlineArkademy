@@ -1,4 +1,6 @@
 # TesOnlineArkademy
+kegunaan JSON pada REST API itu sebagai format untuk bertukar data antara client dan server atau antar aplikasi.
+
 
 1. Bahasa Pemrograman yang digunakan adalah HTML dan Javascript
 2. Tools yg digunakan adalah Visual Studio Code
