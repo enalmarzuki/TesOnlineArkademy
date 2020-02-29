@@ -1,4 +1,4 @@
-Cara Menjalankan nya :
+Cara Menjalankan Nomot 6.a :
 
 1. Buka Xampp
 2. Masuk Ke "phpmyadmin" (localhost)
